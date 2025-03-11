@@ -1,0 +1,110 @@
+/* Basic styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #222;
+  color: #fff;
+}
+
+/* Container styles */
+.container {
+  max-width: 600px;
+  margin: 50px auto 0;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  background-color: #333;
+}
+
+h2 {
+  text-align: center;
+}
+
+/* Input field styles */
+input[type="text"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #555;
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #007bff;
+}
+
+/* List styles */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  padding: 10px;
+  background: #555;
+  border: 1px solid #666;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+ul li:hover {
+  background-color: #666;
+  transform: scale(1.02);
+}
+
+/* Task item styles */
+.task-item {
+  display: flex;
+  align-items: center;
+}
+
+.task-item > span {
+  margin-left: 10px;
+  flex-grow: 1;
+}
+
+/* after clicking on checkbox i.e completed */
+.task-item.completed {
+  text-decoration: line-through;
+  color: #999;
+  background-color: greenyellow;
+}
+
+/* Checkbox styles */
+input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #777;
+  outline: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+/* Delete button styles */
+.delete-btn {
+  display: none;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 15%;
+}
+
+/* Show delete button on hover */
+.task-item:hover > .delete-btn {
+  display: inline;
+}
+
+/* Task counter styles */
+#task-counter {
+  text-align: left;
+  margin-top: 20px;
+}
